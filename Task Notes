@@ -2,8 +2,20 @@ Task 1: Create Directory Structure
 
 Using the command line, create a directory (that is, a folder) named data at the root of your repository. Inside data, create two subdirectories: timestamps and weather.
 
-Notes: I knew from previous lectures how to use certain functions like cd to change directory. What I didn't know was how to create a folder. This video helped me do so https://www.youtube.com/watch?v=PhHgt6UEp3w
+Notes: 
+I knew from previous lectures how to use certain functions like cd to change directory. What I didn't know was how to create a folder. This video helped me do so https://www.youtube.com/watch?v=PhHgt6UEp3w
 
 When I did this it still didn't work as when I copied the path on my MacBook there was an issue due to spaces in my folder, I also remembered struggling to make commits to GitHUb through my terminal. I have grown to like working straight from VS Code so googled how to use the terminal there thinking it would be easier, it wasn't.
 
 I tried pushing my empty folders to GitHub which you are unable to do. I looked up how to fix this and came across .gitkeep, this video helped me navigate through the problem and finally commit the empty folders / subdirectories : https://www.youtube.com/watch?v=PdJqFpxA9zA
+
+I used git add ., git commit -m "Task 1" and git push origin main to ensure it was committed to GitHub.
+
+Task 2: Timestamps
+
+Navigate to the data/timestamps directory. Use the date command to output the current date and time, appending the output to a file named now.txt. Make sure to use the >> operator to append (not overwrite) the file. Repeat this step ten times, then use the more command to verify that now.txt has the expected content.
+
+Notes:
+Task 2 was a bit more straight forward than the first. My usual first stop is YouTube but struggled to find what I wanted but figured it out on stack overflow: https://stackoverflow.com/questions/43221469/write-current-date-time-to-a-file-using-shell-script
+
+To repeat the task I simply copied and pasted date >> now.txt 10 times. Looking back a loop could have worked too but the work was already done. I then used the more command to make sure everything was correct.
