@@ -1,0 +1,9 @@
+Task 1: Create Directory Structure
+
+Using the command line, create a directory (that is, a folder) named data at the root of your repository. Inside data, create two subdirectories: timestamps and weather.
+
+Notes: I knew from previous lectures how to use certain functions like cd to change directory. What I didn't know was how to create a folder. This video helped me do so https://www.youtube.com/watch?v=PhHgt6UEp3w
+
+When I did this it still didn't work as when I copied the path on my MacBook there was an issue due to spaces in my folder, I also remembered struggling to make commits to GitHUb through my terminal. I have grown to like working straight from VS Code so googled how to use the terminal there thinking it would be easier, it wasn't.
+
+I tried pushing my empty folders to GitHub which you are unable to do. I looked up how to fix this and came across .gitkeep, this video helped me navigate through the problem and finally commit the empty folders / subdirectories : https://www.youtube.com/watch?v=PdJqFpxA9zA
