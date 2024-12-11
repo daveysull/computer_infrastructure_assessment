@@ -37,3 +37,15 @@ Thankfully in the task instructions I was given the commands to research which w
 2) -0, this command tells wget to save the downloaded file as weather.json 
 
 https://linuxize.com/post/wget-command-examples/
+
+Task 6: Timestamp the Data
+
+This task was all about combining what was done in the previous two tasks together.
+
+Syntax : wget -O `date "+%Y%m%d_%H%M%S"`.json https://prodapi.metweb.ie/observations/athenry/today
+
+Breakdown : First the backticks which I learned about for task four are used to execute what is inside them first before executing wget which downloads files from the internet.
+What follows -0 is the file name which in this case is the date followed by .json
+
+Task 7: Write the Script
+
