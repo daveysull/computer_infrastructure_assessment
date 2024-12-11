@@ -1,0 +1,30 @@
+Task 1: Create Directory Structure
+
+I knew from previous lectures how to use certain functions like cd to change directory. What I didn't know was how to create a folder. This video helped me do so https://www.youtube.com/watch?v=PhHgt6UEp3w
+When I did this it still didn't work as when I copied the path on my MacBook there was an issue due to spaces in my folder, I also remembered struggling to make commits to GitHUb through my terminal. 
+I have grown to like working straight from VS Code so googled how to use the terminal there thinking it would be easier, it wasn't.
+I tried pushing my empty folders to GitHub which you are unable to do. I looked up how to fix this and came across .gitkeep, this video helped me navigate through the problem and finally commit the empty folders / subdirectories : https://www.youtube.com/watch?v=PdJqFpxA9zA
+I used git add ., git commit -m "Task 1" and git push origin main to ensure it was committed to GitHub.
+
+
+Task 2: Timestamps
+
+This task was a bit more straight forward than the first. My usual first stop is YouTube but struggled to find what I wanted but figured it out on stack overflow: https://stackoverflow.com/questions/43221469/write-current-date-time-to-a-file-using-shell-script
+To repeat the task I simply copied and pasted date >> now.txt 10 times. Looking back a loop could have worked too but the work was already done. I then used the more command to make sure everything was correct.
+
+Task 3: Formatting Timestamps
+
+I learned about formatting options for the date command using the man date command, which was initially overwhelming. I found that %Y stands for the year, %m for the month, %d for the day, and so on. 
+A simpler explanation was on Stack Overflow, which helped clarify things. Using the >> operator ensured the formatted output was appended to the file rather than overwriting it. 
+This task emphasized how powerful command-line tools are for customizing output.
+
+https://stackoverflow.com/questions/1401482/yyyy-mm-dd-format-date-in-shell-script
+
+Task 4: Create Timestamped Files
+
+In this task I used two functions I knew already which were Date and Touch. What was new in this task was combining them and the use of backticks.
+Whatever is inbetween the backticks is executed first before the main command so in this example we are getting the date in the format we want first and then it runs the touch command.
+Syntax: touch `date "+%Y%m%d_%H%M%S"`.txt
+
+https://unix.stackexchange.com/questions/27428/what-does-backquote-backtick-mean-in-commands
+
