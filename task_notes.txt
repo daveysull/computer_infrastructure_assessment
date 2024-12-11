@@ -28,3 +28,12 @@ Syntax: touch `date "+%Y%m%d_%H%M%S"`.txt
 
 https://unix.stackexchange.com/questions/27428/what-does-backquote-backtick-mean-in-commands
 
+Task 5: Download Today's Weather Data
+
+For this task I started off by installing wget using the following command : brew install wget
+After doing this I navigated to the weather folder in my repository and ran my next command : wget -O weather.json https://prodapi.metweb.ie/observations/athenry/today
+Thankfully in the task instructions I was given the commands to research which were...
+1) wget - a command line used for downloading files from the web and 
+2) -0, this command tells wget to save the downloaded file as weather.json 
+
+https://linuxize.com/post/wget-command-examples/
