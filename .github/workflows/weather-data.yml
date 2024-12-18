@@ -2,22 +2,25 @@ name: Automate Weather Script
 
 on:
   schedule:
-    - cron: '0 14 * * *' 
-  workflow_dispatch: 
+    - cron: '0 10 * * *'  # Runs daily at 10 AM UTC
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
   run-weather-script:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repository to the runner
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Make the script executable and run it
       - name: Run weather script
         run: |
           chmod +x weather.sh
           ./weather.sh
 
+      # Commit and push the changes back to the repository
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
