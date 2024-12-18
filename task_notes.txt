@@ -49,3 +49,6 @@ What follows -0 is the file name which in this case is the date followed by .jso
 
 Task 7: Write the Script
 
+This task was quite challenging, but by reviewing my notes from previous tasks, I was able to piece together some of the solution. 
+When I encountered difficulties completing the bash script, I revisited our Week 9 lectures where automation tools like GitHub Copilot were demonstrated. 
+Since I didn’t have access to GitHub Copilot, I used ChatGPT to assist me instead.
