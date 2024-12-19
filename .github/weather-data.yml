@@ -1,0 +1,30 @@
+name: Automate Weather Data
+
+on:
+  schedule:
+    - cron: '0 11 * * *' 
+  workflow_dispatch: 
+
+jobs:
+  update-weather-data:
+    runs-on: ubuntu-latest # Use a Linux VM (Ubuntu)
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Configure Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run weather.sh
+        run: |
+          chmod +x weather.sh
+          ./weather.sh
+
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git commit -m "Update weather data [GitHub Actions]"
+          git push
