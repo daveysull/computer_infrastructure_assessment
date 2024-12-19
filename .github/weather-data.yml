@@ -2,7 +2,7 @@ name: Automate Weather Data
 
 on:
   schedule:
-    - cron: '0 11 * * *' # Runs daily at 10am UTC
+    - cron: '0 11 * * *' 
   workflow_dispatch:
 
 jobs:
