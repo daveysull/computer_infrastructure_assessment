@@ -15,4 +15,5 @@ This GitHub Actions workflow automates the execution of the weather.sh script. I
 This notebook contains a detailed explanation on how the syntax in weather.sh and weather-data.yml works.
 
 Purpose
+
 This repository demonstrates the application of foundational computer infrastructure concepts, focusing on task automation, script development, and integration with GitHub Actions.
