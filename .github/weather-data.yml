@@ -1,4 +1,4 @@
-name: Automate Weather Data
+name: New Weather Data
 
 on:
   schedule:
